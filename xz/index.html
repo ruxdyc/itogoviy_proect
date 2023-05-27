@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sora:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/Black and White Collection 10.svg">
+
+    <!-- Галерея -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <!-- Таблица стилей слайдера -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <!-- AOS (Анимация при пролистывании страницы)-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animate.css (анимация для модального окна) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Наша таблица стилей -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web-разработчик</title>
+</head>
+
+<body>
+    <header data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true">
+        <div class="header_name" data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true">
+            <div class="header_logo">
+                <a href="#"><img src="img/Black and White Collection 10.svg" alt="logo"></a>
+            </div>
+            <div class="header_text">
+                <h1 class="header_h1">Esenjan</h1>
+                <p class="text-logo">WEB-разработчик</p>
+            </div>
+        </div>
+        <div data-aos="fade-left" data-aos-once="false" data-aos-delay="200">
+            <a href="#" class="header_button" onclick="changeBackgroundColor()" id="button">Другая тема</a>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu" data-aos="fade-up" data-aos-mirror="true">
+            <li class="menu-item"><a href="#">Главная</a></li>
+            <li class="menu-item"><a href="#skills">Навыки</a></li>
+            <li class="menu-item"><a href="#">Опыт</a></li>
+            <li class="menu-item"><a href="#works">Работы</a>
+                <ul class="dropdown">
+                    <li class="dropdown-item"><a href="#">Веб-сайт агентства</a></li>
+                    <li class="dropdown-item"><a href="#">Лендинг строительной фирмы</a></li>
+                    <li class="dropdown-item"><a href="#">Личный кабинет сайта</a></li>
+                    <li class="dropdown-item"><a href="#">UI/UX проект</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#contacts">Контакты</a></li>
+            <li class="menu-item"><a href="#">Блог</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section class="about">
+            <!-- Слайдер -->
+            <div class="slider">
+                <!-- 1 слайд -->
+                <div class="slide">
+                    <!-- содержимое слайда -->
+                    <div class="slide-content">
+                        <div class="about-text" data-aos="fade-right" data-aos-mirror="true" data-aos-delay="100"
+                        data-aos-duration="1000">
+                            <h1>Привет, меня зовут Эсенжан. Я Web - разработчик</h1>
+                            <p>Креативный фронтенд-разработчик с малым опытом работы но хочу работать в корпоративных
+                                компаниях
+                                и
+                                стартапах. Увлечен UI/UX</p>
+                            <a href="#" class="about-button">Работы</a>
+                        </div>
+                        <img src="img/Frame 2.svg" alt="" data-aos="fade-left" data-aos-mirror="true"
+                        data-aos-delay="100" data-aos-duration="1000">
+                    </div>
+                </div>
+                <!-- 2 слайд -->
+                <div class="slide">
+                    <!-- содержимое слайда -->
+                    <div class="slide-content">
+                        <div class="about-text" data-aos="fade-right" data-aos-mirror="true" data-aos-delay="100"
+                        data-aos-duration="1000">
+                            <h1>Увлекаюсь играми</h1>
+                            <p>Люблю поиграть в доту 2, кс и многие игры </p>
+                            <!-- <a href="#" class="about-button">Работы</a> -->
+                        </div>
+                        <img src="img/Rectangle (1).png" alt="" data-aos="fade-left" data-aos-mirror="true"
+                        data-aos-delay="100" data-aos-duration="1000">
+                    </div>
+                </div>
+                <!-- 3 слайд -->
+                <div class="slide">
+                    <!-- содержимое слайда -->
+                    <div class="slide-content">
+                        <div class="about-text" data-aos="fade-right" data-aos-mirror="true" data-aos-delay="100"
+                        data-aos-duration="1000">
+                            <h1>Больше всего не люблю</h1>
+                            <p>Когда мои тиммейты фидят или рассфармливают вражеского керри</p>
+                            <!-- <a href="#" class="about-button">Работы</a> -->
+                        </div>
+                        <img src="img/Rectangle (2).png" alt="" data-aos="fade-left" data-aos-mirror="true"
+                        data-aos-delay="100" data-aos-duration="1000">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="skills" id="skills" data-aos="fade-up" data-aos-mirror="true">
+            <h2>Навыки</h2>
+            <div class="skills-items">
+                <h3>CSS</h3>
+                <h3>JavaScript</h3>
+                <h3>Html</h3>
+            </div>
+        </section>
+        <section class="works" id="works" data-aos="fade-down" data-aos-mirror="true" data-aos-duration="1200">
+            <div class="works-text">
+                <h2>Работы</h2>
+                <p>Ниже вы можете ознакомиться с моими недавними работами</p>
+            </div>
+            <div class="works-items" data-aos="fade-down" data-aos-mirror="true" data-aos-duration="1200">
+                <div class="work-item">
+                    <div class="work-text">
+                        <h3>Веб-сайт агентства</h3>
+                        <p>При создании этого проекта использовались такие технологии, как: html5, css3, JavaScript.
+                        </p>
+                    </div>
+                    <!-- <div class="card-image" style="background-image: url(img/3adb4385b0ad8e89bd73c287433d3359.gif);"></div> -->
+                </div>
+                <div class="work-item">
+                    <div class="work-text">
+                        <h3>Лендинг строительной фирмы</h3>
+                        <p>Данный проект отличается ярким дизайном и кричащими слоганами.</p>
+                    </div>
+                    <!-- <div class="card-image" style="background-image: url(img/168847-anime-anime_devushka-anime_art-multfilm-druzya_anime_braziliya-3840x2160);"></div> -->
+                </div>
+                <div class="work-item">
+                    <div class="work-text">
+                        <h3>Личный кабинет сайта</h3>
+                        <p>Необходимо было создать личный кабинет администратора существующему сайту. Технологии:
+                            Laravel
+                        </p>
+                    </div>
+                    <!-- <div class="card-image" style="background-image: url(img/e8f9feac456fc8e449e99afa56bb1752.gif);"></div> -->
+                </div>
+                <div class="work-item">
+                    <div class="work-text">
+                        <h3>UI/UX проект</h3>
+                        <p>Необычный проект, создание макета и юзабилити для интернет-магазина</p>
+                    </div>
+                    <!-- <div class="card-image" style="background-image: url(img/cd61d27e22ea838b820da637cb29765e.gif);"></div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-images" data-aos="fade-down" data-aos-mirror="true" data-aos-duration="1200">
+            <h2>Галерея</h2>
+            <div class="gallery" data-aos="fade-down" data-aos-mirror="true" data-aos-duration="1200">
+                <a data-fancybox="gallery" href="img/168847-anime-anime_devushka-anime_art-multfilm-druzya_anime_braziliya-3840x2160.jpg" data-caption="" data-aos="fade-right"
+                    data-aos-mirror="true" data-aos-duration="1200">
+                    <img src="" alt="">
+                </a>
+                <a data-fancybox="gallery" href="img/cd61d27e22ea838b820da637cb29765e.gif" data-caption=""
+                    data-aos="fade-left" data-aos-mirror="true" data-aos-duration="1200" data-aos-offset="50">
+                    <img src="img/" alt="">
+                </a>
+                <a data-fancybox="gallery" href="img/3adb4385b0ad8e89bd73c287433d3359.gif" data-caption="" data-aos="fade-right"
+                    data-aos-mirror="true" data-aos-duration="1200">
+                    <img src="img/" alt="">
+                </a>
+                <a data-fancybox="gallery" href="img/e8f9feac456fc8e449e99afa56bb1752.gif" data-caption="" data-aos="fade-left"
+                    data-aos-mirror="true" data-aos-duration="1200">
+                    <img src="img/" alt="">
+                </a>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts" data-aos="fade-down" data-aos-mirror="true" data-aos-duration="1200">
+            <div class="form-container" data-aos="fade-down" data-aos-mirror="true" data-aos-duration="1200">
+                <h2>Связаться со мной</h2>
+                <form id="myForm" data-aos="fade-down" data-aos-mirror="true"
+                    data-aos-duration="1200">
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <textarea name="message" id="message" cols="30" rows="10" required
+                        placeholder="Сообщение"></textarea>
+                    <button type="submit">Отправить сообщение</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer data-aos="fade-down" data-aos-mirror="true" data-aos-duration="1200">
+        <a href="#" data-aos="fade-down" data-aos-mirror="true" data-aos-duration="1200"><img
+                src="img/Black and White Collection 10.svg" alt=""></a>
+        <p data-aos="fade-down" data-aos-mirror="true" data-aos-offset="50" data-aos-duration="1800"> Этот сайт был
+            создан Айтибеков Эсенжан. Права не защищены (таков GitHub)  © 2023</p>
+        <div class="social" data-aos="fade-left" data-aos-mirror="true" data-aos-duration="1200" data-aos-offset="10">
+            <a href="#"><img src="img/fi_twitter.svg" alt=""></a>
+            <a href="#"><img src="img/fi_instagram.svg" alt=""></a>
+            <a href="esenzanajtibekov@gmail.com"><img src="img/fi_mail.svg" alt=""></a>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Успех</h2>
+            <p>Данные успешно отправлены</p>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Слайдер -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Галерея -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
